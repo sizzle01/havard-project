@@ -1,0 +1,153 @@
+$light-color: rgba(250, 248, 248, 0.178);
+$deep-color: rgba(209, 203, 203, 0.295);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+//Top most Top most Top most Top most Top most Top most
+
+.top-most {
+  background-color: #d30202cc;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15px;
+  }
+  li {
+    list-style: none;
+    line-height: 60px;
+  }
+  a {
+    display: block;
+    height: 100%;
+    padding: 0 10px;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+//MAIN MENU MAIN MENU  MAIN MENU MAIN MENU MAIN MENU
+
+.nav-main {
+  background-color: $light-color;
+  width: 100%;
+  height: 75px;
+
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+
+  li:nth-child(6) {
+    margin-left: auto;
+  }
+  li:nth-child(1) {
+    margin-top: -18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+  li {
+    list-style: none;
+    line-height: 60px;
+  }
+  a {
+    display: block;
+    height: 100%;
+    padding: 0 10px;
+    text-decoration: none;
+    color: black;
+    line-height: 50px;
+    padding: 0 20px;
+    font-weight: bold;
+  }
+}
+
+//SIGN IN SIGN IN  SIGN IN  SIGN IN  SIGN IN  SIGN IN  SIGN IN  SIGN IN
+
+.enter-login {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.sign-cont {
+  .sign-row {
+    padding: 150px 0 100px 120px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+  }
+
+  input[type="text"],
+  [type="password"],
+  [type="number"],
+  select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+
+//FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER
+footer {
+  background-color: $deep-color;
+  width: 100%;
+
+  .foot-cont {
+    margin: 100px 150px;
+  }
+
+  .foot-row {
+    padding-top: 40px;
+  }
+
+  .fab {
+    text-decoration: none;
+    color: #d30202cc;
+    margin: 5px;
+  }
+
+  ul > li {
+    text-decoration: none;
+    list-style: none;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 8px;
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .policy {
+    text-align: center;
+    margin-top: -60px;
+  }
+}
