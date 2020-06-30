@@ -1,134 +1,134 @@
 $light-color: rgba(250, 248, 248, 0.178);
 $deep-color: rgba(209, 203, 203, 0.295);
-
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 //Top most Top most Top most Top most Top most Top most
-
 .top-most {
-  background-color: #d30202cc;
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 15px;
-  }
-  li {
-    list-style: none;
-    line-height: 60px;
-  }
-  a {
-    display: block;
-    height: 100%;
-    padding: 0 10px;
-    text-decoration: none;
-    color: white;
-  }
-}
-
-//MAIN MENU MAIN MENU  MAIN MENU MAIN MENU MAIN MENU
-
-.nav-main {
-  background-color: $light-color;
-  width: 100%;
-  height: 75px;
-
-  border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px #888888;
-
-  li:nth-child(6) {
-    margin-left: auto;
-  }
-  li:nth-child(1) {
-    margin-top: -18px;
+    background-color: #d30202cc;
+    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 15px;
+    }
+    li {
+        list-style: none;
+        line-height: 60px;
+    }
+    a {
+        display: block;
+        height: 100%;
+        padding: 0 10px;
+        text-decoration: none;
+        color: white;
+    }
+    .container {
+        width: 100%;
+    }
+}
 
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 15px;
-  }
-  li {
-    list-style: none;
-    line-height: 60px;
-  }
-  a {
-    display: block;
-    height: 100%;
-    padding: 0 10px;
-    text-decoration: none;
-    color: black;
-    line-height: 50px;
-    padding: 0 20px;
-    font-weight: bold;
-  }
+//MAIN MENU MAIN MENU  MAIN MENU MAIN MENU MAIN MENU
+.nav-main {
+    background-color: $light-color;
+    width: 100%;
+    height: 75px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+    li:nth-child(6) {
+        margin-left: auto;
+    }
+    li:nth-child(1) {
+        margin-top: -5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 3px;
+    }
+    li {
+        list-style: none;
+        line-height: 60px;
+    }
+    a {
+        display: block;
+        height: 100%;
+        padding: 0 10px;
+        text-decoration: none;
+        color: black;
+        line-height: 50px;
+        padding: 0 20px;
+        font-weight: bold;
+    }
 }
 
 //BEER HOME  BEER HOME  BEER HOME BEER HOME BEER HOME
-
-.liquor-cont {
-  padding: 40px;
-
-  .liquor-desc {
-    margin-left: 100px;
-  }
-
-  .col-sm-3 {
-    padding-top: 60px;
-  }
-  .fig-desc {
-    text-align: center;
-    margin-left: 40px;
-    font-weight: bold;
-    font-size: 500;
-  }
+.container {
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 5px;
+    .liquor-desc {
+        margin-left: 100px;
+    }
+    .col-sm-3 {
+        padding-top: 60px;
+    }
+    .fig-desc {
+        text-align: center;
+        margin-left: -3rem;
+        font-weight: bold;
+        font-size: 500;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 //FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER
-footer {
-  background-color: $deep-color;
-  width: 120%;
-
-  .foot-cont {
-    margin: 100px 150px;
-  }
-
-  .foot-row {
-    padding-top: 40px;
-  }
-
-  .fab {
-    text-decoration: none;
-    color: #d30202cc;
-    margin: 5px;
-  }
-
-  ul > li {
-    text-decoration: none;
-    list-style: none;
-    font-weight: 400;
-    font-size: 15px;
-    padding: 8px;
-  }
-
-  h3 {
-    font-weight: 600;
-    font-size: 20px;
-  }
-
-  .policy {
-    text-align: center;
-    margin-top: -60px;
-  }
+.footer {
+    background-color: $deep-color;
+    width: 100%;
+    .foot-cont {
+        margin: 100px 170px;
+        padding-left: 10rem;
+    }
+    .foot-row {
+        padding-top: 40px;
+    }
+    .fab {
+        text-decoration: none;
+        color: #d30202cc;
+        margin: 5px;
+    }
+    ul>li {
+        text-decoration: none;
+        list-style: none;
+        font-weight: 400;
+        font-size: 15px;
+        padding: 8px;
+    }
+    h3 {
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .policy {
+        text-align: center;
+    }
 }

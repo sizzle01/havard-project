@@ -56,7 +56,7 @@
 }
 
 #nav-main li:nth-child(1) {
-  margin-top: -18px;
+  margin-top: -5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,7 +74,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 15px;
+  padding: 3px;
 }
 
 #nav-main li {
@@ -85,7 +85,6 @@
 #nav-main a {
   display: block;
   height: 100%;
-  padding: 0 10px;
   text-decoration: none;
   color: black;
   line-height: 50px;
@@ -112,9 +111,17 @@
   font-size: 500;
 }
 
+.beer-cont img {
+  max-width: 100%;
+  height: auto;
+}
+
 footer {
   background-color: rgba(209, 203, 203, 0.295);
-  width: 120%;
+}
+
+footer .container {
+  width: 100rem;
 }
 
 footer .foot-cont {

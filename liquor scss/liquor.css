@@ -5,6 +5,12 @@
   padding: 0;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .top-most {
   background-color: #d30202cc;
   height: 45px;
@@ -41,6 +47,10 @@
   color: white;
 }
 
+.top-most .container {
+  width: 100%;
+}
+
 .nav-main {
   background-color: rgba(250, 248, 248, 0.178);
   width: 100%;
@@ -56,7 +66,7 @@
 }
 
 .nav-main li:nth-child(1) {
-  margin-top: -18px;
+  margin-top: -5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,7 +84,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 15px;
+  padding: 3px;
 }
 
 .nav-main li {
@@ -93,45 +103,54 @@
   font-weight: bold;
 }
 
-.liquor-cont {
-  padding: 40px;
+.container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding: 5px;
 }
 
-.liquor-cont .liquor-desc {
+.container .liquor-desc {
   margin-left: 100px;
 }
 
-.liquor-cont .col-sm-3 {
+.container .col-sm-3 {
   padding-top: 60px;
 }
 
-.liquor-cont .fig-desc {
+.container .fig-desc {
   text-align: center;
-  margin-left: 40px;
+  margin-left: -3rem;
   font-weight: bold;
   font-size: 500;
 }
 
-footer {
+.container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer {
   background-color: rgba(209, 203, 203, 0.295);
-  width: 120%;
+  width: 100%;
 }
 
-footer .foot-cont {
-  margin: 100px 150px;
+.footer .foot-cont {
+  margin: 100px 170px;
+  padding-left: 10rem;
 }
 
-footer .foot-row {
+.footer .foot-row {
   padding-top: 40px;
 }
 
-footer .fab {
+.footer .fab {
   text-decoration: none;
   color: #d30202cc;
   margin: 5px;
 }
 
-footer ul > li {
+.footer ul > li {
   text-decoration: none;
   list-style: none;
   font-weight: 400;
@@ -139,13 +158,12 @@ footer ul > li {
   padding: 8px;
 }
 
-footer h3 {
+.footer h3 {
   font-weight: 600;
   font-size: 20px;
 }
 
-footer .policy {
+.footer .policy {
   text-align: center;
-  margin-top: -60px;
 }
 /*# sourceMappingURL=liquor.css.map */
